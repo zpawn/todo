@@ -13,8 +13,6 @@ const App = () => {
   const isAuth = useSelector((state) => !!state?.auth?.token);
   const dispatch = useDispatch();
 
-  console.log('>>>', { isInit, isAuth });
-
   useEffect(() => {
     dispatch(initApp());
   }, []);
@@ -25,7 +23,6 @@ const App = () => {
     <Layout>
       <Routes>
         <Route path='/sign-in' element={<SignIn />} />
-
         <Route
           path='*'
           element={isAuth ? <ToDo /> : <Navigate to='/sign-in' />}
