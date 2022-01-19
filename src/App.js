@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { initApp } from './store/app';
-import Layout from './components/Layout';
-import ToDo from './pages/ToDo';
+import Layout from "./components/Layout";
+import ToDo from "./pages/ToDo";
 import SignIn from './pages/SignIn';
 
 const Spinner = () => <span>Loading...</span>;
