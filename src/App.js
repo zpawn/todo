@@ -25,6 +25,7 @@ const App = () => {
     <Layout>
       <Routes>
         <Route path='/sign-in' element={<SignIn />} />
+
         <Route
           path='*'
           element={isAuth ? <ToDo /> : <Navigate to='/sign-in' />}

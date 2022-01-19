@@ -8,16 +8,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "npm run lint:js",
-    "lint:js": "eslint './src/**/*.{js,jsx}'",
+    "lint:js": "eslint './src/App.js'",
     "fix": "npm run fix:js",
-    "fix:js": "prettier --write './src/**/*.{js,jsx}'",
+    "fix:js": "prettier --write './src/App.js'",
     "prepare": "husky install"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx}": [
-      "prettier --write",
-      "eslint"
-    ]
   },
   "browserslist": {
     "production": [
@@ -55,8 +49,7 @@
     "eslint": "^8.7.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.3.0",
-    "husky": "^7.0.0",
-    "lint-staged": "^12.2.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "husky": "^7.0.0"
   }
 }
