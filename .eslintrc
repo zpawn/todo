@@ -6,9 +6,10 @@
   "extends": [
     "react-app",
     "airbnb",
-    "prettier"
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
   ],
-  "plugins": ["react", "prettier"],
+  "plugins": ["react"],
   "parserOptions": {
     "ecmaVersion":  2018,
     "sourceType":  "module",
@@ -17,14 +18,14 @@
     }
   },
   "rules":  {
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": true,
-        "jsxSingleQuote": true,
-        "trailingComma": "all"
-      }
-    ],
+//    "prettier/prettier": [
+//      "error",
+//      {
+//        "singleQuote": true,
+//        "jsxSingleQuote": true,
+//        "trailingComma": "all"
+//      }
+//    ],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
   }
