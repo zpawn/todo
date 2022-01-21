@@ -18,7 +18,12 @@
   },
   "rules":  {
     "no-console": "error",
-    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
-    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }]
+    "react/function-component-definition": ["error", { "namedComponents": "arrow-function" }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "no-restricted-exports": ["error", {
+        "restrictedNamedExports": [
+        "then" // this will cause tons of confusion when your module is dynamically `import()`ed, and will break in most node ESM versions
+      ]
+    }]
   }
 }
