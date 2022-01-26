@@ -5,8 +5,8 @@
   },
   "extends": [
     "react-app", // eslint-config-react-app
-    "airbnb",    // eslint-config-airbnb
-    "prettier"   // eslint-config-prettier
+//    "airbnb",    // eslint-config-airbnb
+//    "prettier"   // eslint-config-prettier
   ],
   "plugins": ["react"], // eslint-plugin-react
   "parserOptions": {
